@@ -21,7 +21,7 @@ const CONFIG = {
   // ── 메인 (히어로) ──
   groom: {
     name: "알렉스 스피츠내걸",
-    nameEn: "Groom",
+    nameEn: "Alexander Spitznage",
     father: "프레드",
     mother: "캐롤",
     fatherDeceased: true,
@@ -29,7 +29,7 @@ const CONFIG = {
   },
 
   bride: {
-    name: "이창해",
+    name: "Lee changhai",
     nameEn: "Bride",
     father: "이종율",
     mother: "임호선",
