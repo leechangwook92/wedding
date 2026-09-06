@@ -20,33 +20,33 @@ const CONFIG = {
 
   // ── 메인 (히어로) ──
   groom: {
-    name: "신랑",
-    nameEn: "GROOM",
-    father: "아버지",
-    mother: "어머니",
-    fatherDeceased: false,
+    name: "알렉스 스피츠내걸",
+    nameEn: "Groom",
+    father: "프레드",
+    mother: "캐롤",
+    fatherDeceased: true,
     motherDeceased: false
   },
 
   bride: {
-    name: "신부",
-    nameEn: "BRIDE",
-    father: "아버지",
-    mother: "어머니",
+    name: "이창해",
+    nameEn: "Bride",
+    father: "이종율",
+    mother: "임호선",
     fatherDeceased: false,
     motherDeceased: false
   },
 
   wedding: {
-    date: "2025-01-01",
-    time: "13:00",
-    venue: "예식장 이름",
-    hall: "3층 그랜드홀",
-    address: "서울특별시 강남구 테헤란로 123",
-    tel: "02-1234-5678",
+    date: "2026-11-07",
+    time: "12:00",
+    venue: "한국전통정원",
+    hall: "월미공원(한국전통정원)",
+    address: "인천 제물포구 월미로 131-22 ",
+    tel: "032-765-4133",
     mapLinks: {
-      kakao: "",
-      naver: ""
+      kakao: "https://map.kakao.com/",
+      naver: "https://map.naver.com/"
     }
   },
 
@@ -68,21 +68,21 @@ const CONFIG = {
   // ── 마음 전하실 곳 ──
   accounts: {
     groom: [
-      { role: "신랑", name: "홍길동", bank: "OO은행", number: "000-000-000000" },
-      { role: "아버지", name: "홍판서", bank: "OO은행", number: "000-000-000000" },
-      { role: "어머니", name: "김순이", bank: "OO은행", number: "000-000-000000" }
+      { role: "신랑", name: "알렉스 스피츠내걸", bank: "국민은행", number: "000-000-000000" },
+      { role: "아버지", name: "프레드", bank: "신한은행", number: "000-000-000000" },
+      { role: "어머니", name: "케롤", bank: "우리은행", number: "000-000-000000" }
     ],
     bride: [
-      { role: "신부", name: "김영희", bank: "OO은행", number: "000-000-000000" },
-      { role: "아버지", name: "김철수", bank: "OO은행", number: "000-000-000000" },
-      { role: "어머니", name: "이미자", bank: "OO은행", number: "000-000-000000" }
+      { role: "신부", name: "이창해", bank: "하나은행", number: "000-000-000000" },
+      { role: "아버지", name: "이종율", bank: "기업은행", number: "000-000-000000" },
+      { role: "어머니", name: "임호선", bank: "농협은행", number: "000-000-000000" }
     ]
   },
 
   // ── 링크 공유 시 나타나는 문구 ──
   kakaoShare: {
     jsKey: "",
-    title: "결혼식에 초대합니다",
-    description: ""
+    title: "알렉스 ♥ 이창해 결혼합니다",
+    description: "알렉스 ♥ 이창해 결혼합니다"
   }
 };
