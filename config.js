@@ -29,8 +29,8 @@ const CONFIG = {
   },
 
   bride: {
-    name: "Lee changhai",
-    nameEn: "Bride",
+    name: "이창해",
+    nameEn: "Lee changhai",
     father: "이종율",
     mother: "임호선",
     fatherDeceased: false,
