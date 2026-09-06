@@ -45,8 +45,8 @@ const CONFIG = {
     address: "인천 제물포구 월미로 131-22 ",
     tel: "032-765-4133",
     mapLinks: {
-      kakao: "https://map.kakao.com/",
-      naver: "https://map.naver.com/"
+      kakao: "https://kko.to/lHTRLngUq9",
+      naver: "https://naver.me/FP8oarA3"
     }
   },
 
