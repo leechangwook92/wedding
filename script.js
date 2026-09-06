@@ -194,7 +194,7 @@
 
     const heroNames = $('.hero-names');
     if (heroNames) {
-      heroNames.innerHTML = `${c.groom.nameEn}<span class="ampersand">&</span>${c.bride.nameEn}`;
+      heroNames.innerHTML = `${c.groom.name}<span class="ampersand">&</span>${c.bride.name}`;
     }
 
     const heroDate = $('.hero-date');
