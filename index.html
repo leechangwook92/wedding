@@ -121,42 +121,144 @@
 
   <!-- ====== Location ====== -->
   <section class="section location fade-in">
+
     <div class="location-header">
       <div class="section-label">Location</div>
       <div class="section-title">오시는 길</div>
     </div>
+
     <div class="location-info">
       <div class="location-venue-name"></div>
       <div class="location-venue-hall"></div>
       <div class="location-address"></div>
       <div class="location-tel"></div>
     </div>
-    <div class="location-map-image">
-      <img src="" alt="약도" loading="lazy">
+
+
+    <!-- 지도 / 약도 버튼 -->
+    <div class="location-map-tabs">
+
+      <button
+              type="button"
+              class="location-map-tab active"
+              id="btn-location-map"
+      >
+        지도
+      </button>
+
+      <button
+              type="button"
+              class="location-map-tab"
+              id="btn-location-guide"
+      >
+        약도
+      </button>
+
     </div>
+
+
+    <!-- 지도 / 약도 이미지 -->
+    <div class="location-map-image">
+      <img
+              id="location-map-img"
+              src=""
+              alt="오시는 길"
+              loading="lazy"
+      >
+    </div>
+
+
+    <!-- 하단 버튼 -->
     <div class="location-actions">
-      <button type="button" id="btn-copy-address">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-          <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+
+      <button
+              type="button"
+              id="btn-copy-address"
+      >
+
+        <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+        >
+          <rect
+                  x="9"
+                  y="9"
+                  width="13"
+                  height="13"
+                  rx="2"
+                  ry="2"
+          />
+
+          <path
+                  d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"
+          />
         </svg>
+
         주소 복사
       </button>
-      <a href="#" id="link-kakao-map" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-          <circle cx="12" cy="10" r="3"/>
+
+
+      <a
+              href="#"
+              id="link-kakao-map"
+              target="_blank"
+              rel="noopener"
+      >
+
+        <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+        >
+          <path
+                  d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"
+          />
+
+          <circle
+                  cx="12"
+                  cy="10"
+                  r="3"
+          />
         </svg>
+
         카카오맵
       </a>
-      <a href="#" id="link-naver-map" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-          <circle cx="12" cy="10" r="3"/>
+
+
+      <a
+              href="#"
+              id="link-naver-map"
+              target="_blank"
+              rel="noopener"
+      >
+
+        <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+        >
+
+          <path
+                  d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"
+          />
+
+          <circle
+                  cx="12"
+                  cy="10"
+                  r="3"
+          />
+
         </svg>
+
         네이버지도
       </a>
+
     </div>
+
   </section>
 
   <!-- ====== Account ====== -->

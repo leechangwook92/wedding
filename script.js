@@ -857,8 +857,9 @@
   }
 
 
-  // ── Location ──
+// ── Location ──
   function buildLocation(c) {
+
     const venueName =
         $('.location-venue-name');
 
@@ -872,78 +873,223 @@
         $('.location-tel');
 
     const mapImg =
-        $('.location-map-image img');
+        $('#location-map-img');
 
+
+    // 장소명
     if (venueName) {
       venueName.textContent =
           c.wedding.venue;
     }
 
+
+    // 홀 이름
     if (venueHall) {
       venueHall.textContent =
           c.wedding.hall;
     }
 
+
+    // 주소
     if (address) {
       address.textContent =
           c.wedding.address;
     }
 
+
+    // 전화번호
     if (tel && c.wedding.tel) {
+
       tel.innerHTML =
           `<a href="tel:${c.wedding.tel}">` +
           `${c.wedding.tel}` +
           `</a>`;
     }
 
+
+
+    // ============================================
+    // 지도 / 약도
+    // ============================================
+
+    const mapBtn =
+        $('#btn-location-map');
+
+    const guideBtn =
+        $('#btn-location-guide');
+
+
     if (mapImg) {
+
+      // 처음 화면
+      // 지도 = 1.jpg
       mapImg.src =
           'images/location/1.jpg';
 
       mapImg.alt =
-          `${c.wedding.venue} 약도`;
+          `${c.wedding.venue} 지도`;
+
+
+
+      // ==========================================
+      // 지도 버튼
+      // ==========================================
+
+      mapBtn?.addEventListener(
+          'click',
+          () => {
+
+            // 이미 선택되어 있으면 무시
+            if (
+                mapBtn.classList.contains(
+                    'active'
+                )
+            ) {
+              return;
+            }
+
+
+            mapImg.style.opacity = '0';
+
+
+            setTimeout(
+                () => {
+
+                  mapImg.src =
+                      'images/location/1.jpg';
+
+                  mapImg.alt =
+                      `${c.wedding.venue} 지도`;
+
+                  mapImg.style.opacity =
+                      '1';
+
+                },
+                150
+            );
+
+
+            mapBtn.classList.add(
+                'active'
+            );
+
+            guideBtn?.classList.remove(
+                'active'
+            );
+
+          }
+      );
+
+
+
+      // ==========================================
+      // 약도 버튼
+      // ==========================================
+
+      guideBtn?.addEventListener(
+          'click',
+          () => {
+
+            // 이미 선택되어 있으면 무시
+            if (
+                guideBtn.classList.contains(
+                    'active'
+                )
+            ) {
+              return;
+            }
+
+
+            mapImg.style.opacity = '0';
+
+
+            setTimeout(
+                () => {
+
+                  // 대중교통 안내 이미지
+                  mapImg.src =
+                      'images/location/2.jpg';
+
+                  mapImg.alt =
+                      `${c.wedding.venue} 대중교통 이용 안내`;
+
+                  mapImg.style.opacity =
+                      '1';
+
+                },
+                150
+            );
+
+
+            guideBtn.classList.add(
+                'active'
+            );
+
+            mapBtn?.classList.remove(
+                'active'
+            );
+
+          }
+      );
+
     }
 
 
+
+    // ============================================
     // 주소 복사
+    // ============================================
+
     const copyBtn =
         $('#btn-copy-address');
 
     copyBtn?.addEventListener(
         'click',
         () => {
+
           copyToClipboard(
               c.wedding.address,
               '주소가 복사되었습니다'
           );
+
         }
     );
 
 
+
+    // ============================================
     // 지도 링크
+    // ============================================
+
     const kakaoLink =
         $('#link-kakao-map');
 
     const naverLink =
         $('#link-naver-map');
 
+
     if (
         kakaoLink &&
         c.wedding.mapLinks.kakao
     ) {
+
       kakaoLink.href =
           c.wedding.mapLinks.kakao;
+
     }
+
 
     if (
         naverLink &&
         c.wedding.mapLinks.naver
     ) {
+
       naverLink.href =
           c.wedding.mapLinks.naver;
-    }
-  }
 
+    }
+
+  }
 
   // ── Account ──
   function buildAccount(c) {

@@ -40,7 +40,7 @@ const CONFIG = {
   wedding: {
     date: "2026-11-07",
     time: "12:00",
-    venue: "한국전통정원",
+    venue: "월미도 양진당",
     hall: "월미공원(한국전통정원)",
     address: "인천 제물포구 월미로 131-22 ",
     tel: "032-765-4133",
@@ -74,8 +74,8 @@ const CONFIG = {
     ],
     bride: [
       { role: "신부", name: "이창해", bank: "국민은행", number: "001501-04-112976" },
-      { role: "아버지", name: "이종율", bank: "기업은행", number: "000-000-000000" },
-      { role: "어머니", name: "임호선", bank: "농협은행", number: "000-000-000000" }
+      { role: "아버지", name: "이종율", bank: "기업은행", number: "023-18-83382-9" },
+      { role: "어머니", name: "임호선", bank: "농협은행", number: "419-12-211301" }
     ]
   },
 
