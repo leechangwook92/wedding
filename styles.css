@@ -983,3 +983,9 @@ a {
   object-fit: contain;
   transition: opacity 0.2s ease;
 }
+
+.location .location-map-tabs,
+.location .location-map-image {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+}
