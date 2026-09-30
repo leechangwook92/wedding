@@ -40,8 +40,8 @@ const CONFIG = {
   wedding: {
     date: "2026-11-07",
     time: "12:00",
-    venue: "월미전통정원(양진당)",
-    hall: "월미전통정원(양진당)",
+    venue: "월미공원",
+    hall: "월미전통정원 내(양진당)",
     address: "인천 제물포구 월미로 131-22 ",
     tel: "032-765-4133",
     mapLinks: {
