@@ -186,6 +186,13 @@ a {
   opacity: 0.7;
 }
 
+.hero-hall {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
 .hero-scroll {
   position: absolute;
   bottom: 20px;

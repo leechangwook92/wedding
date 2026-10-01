@@ -297,6 +297,13 @@
     if (heroVenue) {
       heroVenue.textContent = c.wedding.venue;
     }
+
+    const heroHall = $('.hero-hall');
+
+    if (heroHall) {
+      heroHall.textContent = c.wedding.venue;
+    }
+
   }
 
 
