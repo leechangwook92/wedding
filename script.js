@@ -301,7 +301,7 @@
     const heroHall = $('.hero-hall');
 
     if (heroHall) {
-      heroHall.textContent = c.wedding.venue;
+      heroHall.textContent = c.wedding.hall;
     }
 
   }
